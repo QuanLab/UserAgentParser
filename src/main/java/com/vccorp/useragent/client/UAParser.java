@@ -74,9 +74,10 @@ public class UAParser {
 	}
 	
 	public static void main(String[] args) {
-		UAParser ua = UAParser.getInstance();
-			String userAgentString =
+		UAParser userAgentParser = UAParser.getInstance();
+		String userAgentString =
 					"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/46.0.2490.85 Mobile/11D257 Safari/9537.53";
-			System.out.println(ua.parse(userAgentString));
+		String info = userAgentParser.parse(userAgentString);
+		System.out.println(info);
 	}
 }

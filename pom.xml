@@ -16,7 +16,7 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
+            <artifactId>slf4j-simple</artifactId>
             <version>1.7.21</version>
         </dependency>
     </dependencies>
@@ -27,7 +27,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.vccorp.ads.StatsAdn</mainClass>
+                            <mainClass>com.vccorp.useragent.client.UAParser</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
