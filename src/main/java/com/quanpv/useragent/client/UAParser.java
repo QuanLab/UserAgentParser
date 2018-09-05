@@ -1,6 +1,6 @@
-package com.vccorp.useragent.client;
+package com.quanpv.useragent.client;
 
-import com.vccorp.useragent.config.SystemInfo;
+import com.quanpv.useragent.config.PropertyConfig;
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -25,9 +25,9 @@ public class UAParser {
 	 */
 	public UAParser() {
 		try {
-			String host= SystemInfo.THRIFT_SERVER_HOST;
+			String host= PropertyConfig.THRIFT_SERVER_HOST;
 			System.err.println(host);
-			transport = new TSocket(host, SystemInfo.THRIFT_SERVER_PORT);
+			transport = new TSocket(host, PropertyConfig.THRIFT_SERVER_PORT);
 
 			transport.open();
 			TProtocol protocol = new TBinaryProtocol(transport);

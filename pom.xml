@@ -20,6 +20,7 @@
             <version>1.7.21</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -27,7 +28,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.vccorp.useragent.client.UAParser</mainClass>
+                            <mainClass>com.quanpv.useragent.client.UAParser</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
